@@ -2,9 +2,8 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import styled from "styled-components"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout/layout.component"
+import SEO from "../components/seo/seo.component"
 
 const BlogLink = styled(Link)`
   text-decoration: none;
@@ -19,8 +18,8 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <h1>Blee's thoughts</h1>
-      <h4>{data.allMarkdownRemark.totalCount}</h4>
+      <h1>Hopefully this is a coherent brain-map</h1>
+      <h4>Posts: {data.allMarkdownRemark.totalCount}</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <BlogLink to={node.fields.slug}>
