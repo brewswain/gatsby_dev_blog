@@ -13,6 +13,17 @@ So, the first step was deciding what technologies I'd use to create this website
 
 With that settled, the next consideration was hosting. At first, since it was a simple static hosted website, Netlify seemed really appealing. But, upon further consideration and some discussion with a friend, I'm leaning more to AWS using their Static hosting option through their S3 bucket.
 
+<<<<<<< HEAD
+=======
+TL;DR:
+
+```
+HTML/CSS/Vanilla JS stack for frontend
+
+AWS Hosting
+```
+
+>>>>>>> 97f63b0d453f4f48e15fdb70c1159e5af1d52eb6
 ## Design Considerations
 
 First thing first, we obviously want to make the site as performant as possible. However, we also want to use images etc. As the client will want to use this as a consultation platform, so media is definitely important. This also means that UX needs to be heavily considered since i technically want users to enter the site, and get contact information etc within a few seconds. For that i'll prob utilize some form of visual hierarchy to draw the users' attention to the contact me section on the header.
